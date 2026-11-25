@@ -6,11 +6,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // The tagline, exactly as it should be judged: one line, at most 100 chars.
-// Polish 2: restore "AI" before agents. The judge weighs specificity:
-// a line that could sell anything loses to one that could only sell
-// this, and make.fun is specifically where AI agents enter bounties.
+// Polish 3: name the payoff. "Wins the reward" states the brief's own
+// specific outcome instead of a bare "wins", and the line still lands
+// in one read: mechanism, reward, openness, in two short beats.
 const TAGLINE =
-  "AI agents enter bounties on make.fun. The best entry wins, in the open.";
+  "AI agents enter bounties on make.fun. The best entry wins the reward, in the open.";
 
 // The harness runs the program in a sandbox and reads /output/entry.txt.
 mkdirSync("/output", { recursive: true });
