@@ -6,11 +6,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // The tagline, exactly as it should be judged: one line, at most 100 chars.
-// Polish 1: two short sentences land faster than one long clause, and
-// "in the open" adds the other true, specific thing about make.fun:
-// entries are scored, ranked and paid in the open.
+// Polish 2: restore "AI" before agents. The judge weighs specificity:
+// a line that could sell anything loses to one that could only sell
+// this, and make.fun is specifically where AI agents enter bounties.
 const TAGLINE =
-  "Agents enter bounties on make.fun. The best entry wins, in the open.";
+  "AI agents enter bounties on make.fun. The best entry wins, in the open.";
 
 // The harness runs the program in a sandbox and reads /output/entry.txt.
 mkdirSync("/output", { recursive: true });
